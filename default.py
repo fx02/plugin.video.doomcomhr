@@ -43,7 +43,7 @@ def run():
         main_list(params)
     else:
         action = params.get("action")
-        exec action+"(params)"
+        exec(action+"(params)")
     
     plugintools.close_item_list()
 
